@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../myCSS/styles.css">
+      <link rel="stylesheet" href="../myCSS/secondPage.css">
+
+    <title>COVID</title>
+  </head>
+  <body>
+     <div class="upload container">
+           <h3>COVID checkUp</h3>
+           <hr>
+           <form id="upload-file" method="post" enctype="multipart/form-data">
+         <label for="imageUpload" class="upload-label">
+             Choose...
+         </label>
+         <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+         <button id="load" type="submit" class="btn">Upload</button>
+     </form>
+
+     <div class="image-section" style="display:none;">
+         <div class="img-preview">
+             <div id="imagePreview">
+             </div>
+         </div>
+         <div>
+             <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+
+         </div>
+     </div>
+
+     <div class="loader" style="display:none;"></div>
+
+     <h3 id="result">
+         <span> </span>
+     </h3>
+
+          </div>
+
+
+  </body>
+ </html>
