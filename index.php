@@ -1,5 +1,5 @@
 <?php
 
-include_once("covidpage.html");
+include_once("index.html");
 
 ?>
